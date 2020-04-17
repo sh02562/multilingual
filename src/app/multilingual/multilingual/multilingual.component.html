@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+
+    <span>Angular Multilingular Page</span>
+
+    <span class="example-spacer"></span>
+
+    <mat-select class="example-icon" style="width: 60px;" (change)="switchLang(selectedLang.value)">
+        <mat-option *ngFor="let language of languages" [value]="language">
+            {{language}}
+        </mat-option>
+    </mat-select>
+
+</mat-toolbar>
+
+<br><br><br><br>
+
+<div class="center_div">
+    <h3>Happy Quotes</h3>
+    <br>
+    <p>
+        {{'Description'| translate}}
+    </p>
+</div>
